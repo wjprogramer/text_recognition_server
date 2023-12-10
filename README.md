@@ -40,3 +40,10 @@ $ npm version
 }
 ```
 
+## Get Started
+
+1. create `.env` (According `.env.sample`)
+
+
+
+
