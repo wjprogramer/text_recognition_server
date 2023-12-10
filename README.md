@@ -4,7 +4,7 @@
 ```
 npm init -y
 # 加入一些套件到 package.json
-npm install -g tsc yarn
+npm install -g typescript yarn
 yarn
 tsc --init
 ```
