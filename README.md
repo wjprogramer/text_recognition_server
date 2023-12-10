@@ -1,3 +1,9 @@
+# Text Recognition Server
+
+## 注意事項!!!!!
+
+- 目前只有考慮 TicketPlus
+- 需搭配使用 [Browser-Scripts-Private/搶票/搶票.js](https://github.com/wjprogramer/Browser-Scripts-Private)
 
 ## Create Project
 

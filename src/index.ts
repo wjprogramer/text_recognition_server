@@ -3,6 +3,7 @@ import path, { dirname } from 'path';
 import { setGlobal } from './global';
 import { runServer } from '@src/server';
 import { initEnv } from './app';
+import UploadHelper from "@src/helpers/upload_helper";
 
 const main = async () => {
     const env = initEnv();
@@ -13,6 +14,7 @@ const main = async () => {
         return;
     }
 
+    // Init global configs
     const projectRoot = dirname(dirname(mainFileName));
     const dbPath = path.join(projectRoot, 'data', 'database.db');
     const db = Database(dbPath);
@@ -23,6 +25,10 @@ const main = async () => {
         env,
     });
 
+    // Init by global configs
+    UploadHelper.init();
+
+    // Run
     runServer();
 }
 

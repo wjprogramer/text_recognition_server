@@ -24,7 +24,11 @@ const runServer = () => {
     // api routers
     app.use(getRouters());
 
-    app.listen(9487);
+    // Run
+    const serverPort = 9487;
+    app.listen(serverPort);
+    console.log(`Server listen: http://localhost:${serverPort} ...`);
+
 }
 
 export { runServer }
